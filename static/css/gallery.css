@@ -1,0 +1,54 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    border-color: black;
+    width: 250px;
+    height: 200px;
+    
+  }
+
+.gallery{
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15% 15%;
+  justify-content: center;
+
+}  
+
+details > summary {
+    padding: 4px;
+    width: 200px;
+    background-color: #eeeeee;
+    border: none;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    cursor: pointer;
+  }
+  
+  details > p {
+    background-color: #eeeeee;
+    padding: 4px;
+    margin: 0;
+    box-shadow: 1px 1px 2px #bbbbbb;
+  }
+
+ body{
+     background-color: lemonchiffon;
+     margin-top: 50px;
+     margin-left: 50px;
+ }
+ 
+h1{
+    font-size:xx-large;
+}
+
+.button{
+  background-color: #291b12;
+  color: white;
+  text-decoration: none;
+  border-radius: 2px;
+  padding: 5px;
+}

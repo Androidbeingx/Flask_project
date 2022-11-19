@@ -1,0 +1,22 @@
+.done{
+    text-decoration: line-through;
+}
+
+body{
+    background-color: slategray;
+
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    float: right;
+}
+
+h1{
+    text-align: center;
+    clear: right;
+    font-weight: bold;
+    color: white;
+    font-size: xx-large;
+}

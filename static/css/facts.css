@@ -1,0 +1,43 @@
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 200px;
+}
+
+h1{
+    clear: left;
+}
+
+table, tr, th, td{
+    border: 1px solid;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+form{
+    text-align: center;
+}
+
+.button{
+    background-color: #199319;
+    color: white;
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+td, th {
+    padding: 3px;
+}
+
+body{
+    background-color: lightblue;
+}
+

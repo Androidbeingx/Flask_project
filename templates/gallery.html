@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal gallery</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/gallery.css')}}"
+    
+</head>
+<body>
+    <div>
+    <a class="button" href="/">Home</a>
+    <h1>The Gallery: </h1>
+    <details>
+        <summary>About </summary>
+        <p>In this page is displayed a gallery of animal photos. </p>
+      </details>
+      <br>
+      <br>
+    <div class="gallery">
+        {% for image in image_gallery %}
+        <img src = "{{ url_for('static', filename=image)}}">
+         {% endfor %}
+    </div>
+</body>
+</html>
+
+

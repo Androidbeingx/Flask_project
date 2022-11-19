@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facts</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/facts.css')}}"
+</head>
+<body>
+    <div style="margin-top: 50px;">
+    <a class="button" href="/">Home</a>   
+    <img src="/static/images/facts.png" alt="sketch" >
+    <h1 style="text-align: center;">
+        Facts database
+    </h1>
+    <table id="facts" class="center">
+        <tr>
+            <th>ID</th>
+            <th>Theme</th>
+            <th>Fact</th>
+        </tr>
+        {% for fact in facts %}
+        <tr>
+            <td>
+                {{fact.id}}
+            </td>
+            <td>
+                {{fact.theme}}
+            </td>
+            <td>
+                {{fact.fact}}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <h2 style="text-align: center;">
+        Add a new fact
+    </h2>
+    <form action="facts/api/addfact" method="post" >
+        <label for="id">Id</label><br>
+        <input type="number" id="id" name="id" placeholder="9"><br>
+
+        <label for="theme">Theme</label><br>
+        <input type="text" id="theme" name="theme" placeholder="Nature"><br>
+
+        <label for="fact">Fact</label><br>
+        <input type="text" id="fact" name="fact" placeholder="...insert fact"><br><br>
+
+        <input type="submit" value="Send">
+    </form>
+    <h2 style="text-align: center;">
+        Search a fact by theme
+    </h2>
+    <form action="/facts/api/searchfact" method="post" id="searchform" style="clear: right;">
+        
+        <label for="theme">Theme name: </label><br>
+        <input type="text" id="theme" name="theme" placeholder="Nature"><br><br>
+ 
+        <input type="submit" value="Send">
+    </form>
+    </div>
+</body>
+</html>

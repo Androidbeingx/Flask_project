@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote of the day</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/quote.css')}}">
+     
+    
+</head>
+<body>
+    <div>
+    <a class="button" href="/">Home</a>
+    <br>
+    <br>
+    <details>
+        <summary>About </summary>
+        <p>In this page is displayed a random quote in every refresh. </p>
+      </details>
+      <br>
+      <br>
+    <h1>The quote of the day: </h1>
+    <ul>
+        <li> Character: {{character}} </li>
+        <li> Quote:     {{quote}}     </li>
+    </ul>
+    <img src="static/images/calavera-hamlet.png" alt="hamlet">
+    </div>
+</body>
+</html>
